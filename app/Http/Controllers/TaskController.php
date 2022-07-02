@@ -14,6 +14,7 @@ class TaskController extends Controller
     public function index(int $id){
         $folders = Auth::user()->folders()->get();
 
+        // テスト
         // 選ばれたフォルダを取得
         $current_folder = Folder::find($id);
 
